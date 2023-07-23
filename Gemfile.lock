@@ -59,6 +59,7 @@ GEM
     addressable (2.8.4)
       public_suffix (>= 2.0.2, < 6.0)
     bcrypt (3.1.18)
+    bcrypt (3.1.18-java)
     bindex (0.8.1)
     bootsnap (1.16.0)
       msgpack (~> 1.2)
@@ -77,6 +78,7 @@ GEM
     concurrent-ruby (1.2.2)
     crass (1.0.6)
     date (3.3.3)
+    date (3.3.3-java)
     devise (4.9.2)
       bcrypt (~> 3.0)
       orm_adapter (~> 0.1)
@@ -85,6 +87,9 @@ GEM
       warden (~> 1.2.3)
     erubi (1.12.0)
     ffi (1.15.5)
+    ffi (1.15.5-java)
+    ffi (1.15.5-x64-mingw32)
+    ffi (1.15.5-x86-mingw32)
     globalid (1.1.0)
       activesupport (>= 5.0)
     i18n (1.14.1)
@@ -115,6 +120,7 @@ GEM
     mini_portile2 (2.8.2)
     minitest (5.18.1)
     msgpack (1.7.1)
+    msgpack (1.7.1-java)
     mysql2 (0.5.5)
     net-imap (0.3.6)
       date
@@ -126,13 +132,27 @@ GEM
     net-smtp (0.3.3)
       net-protocol
     nio4r (2.5.9)
+    nio4r (2.5.9-java)
     nokogiri (1.13.10)
       mini_portile2 (~> 2.8.0)
       racc (~> 1.4)
+    nokogiri (1.13.10-java)
+      racc (~> 1.4)
+    nokogiri (1.13.10-x64-mingw32)
+      racc (~> 1.4)
+    nokogiri (1.13.10-x86-mingw32)
+      racc (~> 1.4)
+    nokogiri (1.13.10-x86_64-linux)
+      racc (~> 1.4)
     orm_adapter (0.5.0)
+    pg (1.5.3)
+    pg (1.5.3-x64-mingw32)
+    pg (1.5.3-x86-mingw32)
     public_suffix (5.0.3)
     puma (3.12.6)
+    puma (3.12.6-java)
     racc (1.7.1)
+    racc (1.7.1-java)
     rack (2.2.7)
     rack-proxy (0.7.6)
       rack
@@ -206,6 +226,7 @@ GEM
       sprockets (>= 3.0.0)
     thor (1.2.2)
     thread_safe (0.3.6)
+    thread_safe (0.3.6-java)
     tilt (2.2.0)
     timeout (0.4.0)
     turbolinks (5.2.1)
@@ -213,6 +234,8 @@ GEM
     turbolinks-source (5.2.0)
     tzinfo (1.2.11)
       thread_safe (~> 0.1)
+    tzinfo-data (1.2023.3)
+      tzinfo (>= 1.0.0)
     warden (1.2.9)
       rack (>= 2.0.9)
     web-console (4.2.0)
@@ -230,13 +253,20 @@ GEM
       railties (>= 4.2)
     websocket-driver (0.7.5)
       websocket-extensions (>= 0.1.0)
+    websocket-driver (0.7.5-java)
+      websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.5)
     xpath (3.2.0)
       nokogiri (~> 1.8)
     zeitwerk (2.6.8)
 
 PLATFORMS
+  java
   ruby
+  x64-mingw32
+  x86-mingw32
+  x86-mswin32
+  x86_64-linux
 
 DEPENDENCIES
   bootsnap (>= 1.4.2)
@@ -248,6 +278,7 @@ DEPENDENCIES
   listen (>= 3.0.5, < 3.2)
   mini_magick
   mysql2 (>= 0.4.4)
+  pg
   puma (~> 3.11)
   rails (~> 6.0.0)
   sass-rails (~> 5)
