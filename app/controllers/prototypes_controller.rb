@@ -1,5 +1,5 @@
 class PrototypesController < ApplicationController
-  before_action :set_prototype, except: [:show, :edit, :update, :destroy]
+  before_action :set_prototype, only: [:show, :edit, :update, :destroy]
   before_action :authenticate_user!, except: [:index, :new, :create]
   before_action :contributor_confirmation, only: [:edit, :update, :destroy]
   
